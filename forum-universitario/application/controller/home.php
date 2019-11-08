@@ -11,13 +11,6 @@ class Home extends Controller
         require APP . 'view/_templates/footer.php';
     }
 
-    public function exampleOne()
-    {
-        require APP . 'view/_templates/header-home.php';
-        require APP . 'view/home/example_one.php';
-        require APP . 'view/_templates/footer.php';
-    }
-
     public function search()
     {
         $posts = null;
