@@ -1,0 +1,16 @@
+{
+    "name": "bruno/forum-universitario",
+    "type": "project",
+    "description": "A simple PHP MVC",
+    "authors": [
+        {
+            "name": "Bruno Duarte",
+            "email": "fbruno.duarte@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
+
