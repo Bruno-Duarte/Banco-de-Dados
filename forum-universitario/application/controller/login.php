@@ -151,7 +151,7 @@ class Login extends Controller
             } else {
                 $posts = $this->model->getAllPosts();
                 
-                require APP . 'view/_templates//header-user.php';
+                require APP . 'view/_templates//header-user-home.php';
                 require APP . 'view/login/user-home.php';
                 require APP . 'view/_templates/footer.php';
             }
@@ -206,7 +206,7 @@ class Login extends Controller
             } else {
                 $posts = $this->model->getAllPosts();
                 
-                require APP . 'view/_templates//header-user.php';
+                require APP . 'view/_templates//header-user-home.php';
                 require APP . 'view/login/user-home.php';
                 require APP . 'view/_templates/footer.php';
             }
@@ -377,7 +377,6 @@ class Login extends Controller
         session_start();
         if ($_SESSION["newsession"]) {
             if (isset($user_id)) {
-                // do deleteSong() in model/model.php
                 $this->model->deleteUser($user_id);
             }
 
